@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeFix | Services and Prices</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f6ff;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .logo {
+            color: #3478f6;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3478f6;
+        }
+
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h1 {
+            font-size: 36px;
+            color: #3478f6;
+        }
+
+        .subtitle {
+            color: #666;
+        }
+
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+            gap: 22px;
+            max-width: 1200px;
+            margin: 35px auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 24px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px #dce5f5;
+            border-bottom: 5px solid #3478f6;
+            overflow-wrap: break-word;
+        }
+
+        .service-card h2 {
+            color: #3478f6;
+            font-size: 21px;
+        }
+
+        .service-card p {
+            background: #f0f6ff;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 10px 0 30px;
+            padding: 12px 22px;
+            background: #3478f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #3478f6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .services h1 {
+                font-size: 28px;
+            }
+
+            .service-card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🏠 HomeFix</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services &amp; Prices</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="services">
+
+    <h1>Our Services &amp; Prices</h1>
+    <p class="subtitle">Quality service by skilled professionals</p>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h2>🔧 Plumbing</h2>
+            <p>Tap repair — ₹199 onwards</p>
+            <p>Pipe leakage — ₹299 onwards</p>
+            <p>Washbasin installation — ₹499 onwards</p>
+            <p>Bathroom fittings — ₹399 onwards</p>
+        </div>
+
+        <div class="service-card">
+            <h2>⚡ Electrical</h2>
+            <p>Switch replacement — ₹149 onwards</p>
+            <p>Fan installation — ₹249 onwards</p>
+            <p>Light installation — ₹199 onwards</p>
+            <p>Electrical inspection — ₹299 onwards</p>
+        </div>
+
+        <div class="service-card">
+            <h2>❄️ AC Services</h2>
+            <p>AC general servicing — ₹599 onwards</p>
+            <p>AC cleaning — ₹399 onwards</p>
+            <p>AC installation — ₹1,499 onwards</p>
+            <p>AC repair inspection — ₹299 onwards</p>
+        </div>
+
+        <div class="service-card">
+            <h2>🎨 Painting</h2>
+            <p>Wall touch-up — ₹499 onwards</p>
+            <p>Interior painting — ₹12 per sq. ft. onwards</p>
+            <p>Exterior painting — ₹15 per sq. ft. onwards</p>
+        </div>
+
+        <div class="service-card">
+            <h2>🪚 Carpentry</h2>
+            <p>Door repair — ₹299 onwards</p>
+            <p>Cupboard repair — ₹399 onwards</p>
+            <p>Furniture assembly — ₹499 onwards</p>
+            <p>Lock installation — ₹249 onwards</p>
+        </div>
+
+        <div class="service-card">
+            <h2>🏠 Home Renovation</h2>
+            <p>Kitchen renovation — Inspection required</p>
+            <p>Bathroom renovation — Inspection required</p>
+            <p>General repairs — ₹499 onwards</p>
+        </div>
+
+        <div class="service-card">
+            <h2>🌍 Earthing &amp; Grounding</h2>
+            <p>Earthing inspection — ₹399 onwards</p>
+            <p>Grounding repair — Inspection required</p>
+            <p>New earthing installation — Quotation required</p>
+        </div>
+
+        <div class="service-card">
+            <h2>🛠️ General Maintenance</h2>
+            <p>Wall drilling — ₹199 onwards</p>
+            <p>Shelf installation — ₹249 onwards</p>
+            <p>Minor home repairs — ₹299 onwards</p>
+        </div>
+
+    </div>
+
+    <p>
+        Note: Prices are indicative starting prices.
+        Final charges may vary depending on the work and materials.
+        Confirm prices with the service provider before booking.
+    </p>
+
+    <a href="index.html" class="back-button">← Back to Home</a>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 HomeFix Services. All rights reserved.</p>
+    <p>Your Trusted Home Maintenance Partner</p>
+</footer>
+
+</body>
+</html>
